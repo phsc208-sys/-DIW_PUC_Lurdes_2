@@ -18,14 +18,13 @@ header {
     display: flex;
     align-content: center;
     font-weight: bold;
-
 }
-.logo 
-{
-    background-color: rgb(255, 255, 255);
-    width: 5rem;
-    height: 5rem;
-    margin-right: .5rem;
+
+.Logo {
+    background-color: rgb(69, 88, 250);
+    width: 2rem;
+    height: 2rem;
+    margin-right: .2rem;
     border-radius: 100%;
     display: flex;
     justify-content:center;
@@ -33,14 +32,14 @@ header {
     align-content: center;
     font-weight: bold;
 }
-.titulo
-{
+
+.titulo-cabeçalho{
     border: flex .1rem solid green;
     flex: 1;
 }
-.menu-sorvete
-{
-    border: .1rem solid red;
+
+.menu-sorvete{
+    /* border: .1rem solid red; */
     width: 1rem solid;
     height: 1rem solid;
     padding: .5rem;
@@ -49,14 +48,21 @@ header {
     justify-content: center;
     align-content: center;
     border-radius: 100%;
-
 }
-.menu-sorvete:hover
-{
+
+.menu-sorvete:hover{
     background-color: #5a5252;
 }
-.menu-sorvete i 
-{
+.menu-sorvete:hover i{
+    color: #dbdbdb;
+}
+.menu-sorvete i:hover {
+    color: #ffffff;
+}
+.menu-sorvete i{
+    color: #969696;
+}
+.menu-sorvete i {
    color: ccc;
 
 }
@@ -84,41 +90,43 @@ nav {
 main {
     /*border: .1rem solid purple;*/
     flex: 1;
-    padding: 1.7rem;
+    padding:  .7rem;
+    display: flex;
+    flex-wrap: wrap;
 }
-.cartao
-{
+
+.cartao{
     border: .12rem solid #222222;
     width: 10rem;
     height: 15rem;
     box-shadow: .5rem .5rem .3rem .03rem #ccc;
     padding: .5rem;
+    display: flex 1;
+    
 }
-.imagem
-{
+
+.imagem{
     width: 100%;
 }
-.title
-{
+
+.title{
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: .2rem;
 }
-.descricao
-{
+
+.descrição{
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: .2rem;
 }
-.preco
-{
+.preco{
     font-size: 1.5rem;
     font-weight: bold;
     color: green;
     text-align: right;
 }
-.botao
-{
+.botao{
     /*border: none;
     border-radius: .5rem;*/
     background-color: blue;
@@ -126,6 +134,7 @@ main {
     width:100%;
     padding:.3rem .5rem;
     margin-top: 1rem;
+
     
 }
 footer {
@@ -137,4 +146,16 @@ footer {
     display: flex;
     align-content: center;
     font-weight: bold;
+}
+@media (max-width: 576px){
+    .titulo-cabeçalho{
+        opacity: 0;
+    }
+    nav{
+        display: none;
+    }
+    main{
+        display: flex;
+    }
+
 }
