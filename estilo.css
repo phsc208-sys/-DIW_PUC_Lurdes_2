@@ -34,14 +34,14 @@ header {
 }
 
 .titulo-cabeçalho{
-    border: flex .1rem solid green;
+    /* border: .1rem solid green; */
     flex: 1;
 }
 
 .menu-sorvete{
     /* border: .1rem solid red; */
-    width: 1rem solid;
-    height: 1rem solid;
+    width: 1rem;
+    height: 1rem;
     padding: .5rem;
     display: flex;
     align-items: center;
@@ -63,7 +63,7 @@ header {
     color: #969696;
 }
 .menu-sorvete i {
-   color: ccc;
+   color: #ccc;
 
 }
 
@@ -93,6 +93,7 @@ main {
     padding:  .7rem;
     display: flex;
     flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .cartao{
@@ -102,6 +103,7 @@ main {
     box-shadow: .5rem .5rem .3rem .03rem #ccc;
     padding: .5rem;
     display: flex 1;
+    margin: .5rem;
     
 }
 
@@ -134,6 +136,7 @@ main {
     width:100%;
     padding:.3rem .5rem;
     margin-top: 1rem;
+    border-radius: 10%;
 
     
 }
