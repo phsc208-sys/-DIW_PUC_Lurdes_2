@@ -27,18 +27,18 @@ header {
     margin-right: .2rem;
     border-radius: 100%;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     align-content: center;
     font-weight: bold;
 }
 
-.titulo-cabeçalho{
+.titulo-cabeçalho {
     /* border: .1rem solid green; */
     flex: 1;
 }
 
-.menu-sorvete{
+.menu-sorvete {
     /* border: .1rem solid red; */
     width: 1rem;
     height: 1rem;
@@ -50,20 +50,24 @@ header {
     border-radius: 100%;
 }
 
-.menu-sorvete:hover{
+.menu-sorvete:hover {
     background-color: #5a5252;
 }
-.menu-sorvete:hover i{
+
+.menu-sorvete:hover i {
     color: #dbdbdb;
 }
+
 .menu-sorvete i:hover {
     color: #ffffff;
 }
-.menu-sorvete i{
+
+.menu-sorvete i {
     color: #969696;
 }
+
 .menu-sorvete i {
-   color: #ccc;
+    color: #ccc;
 
 }
 
@@ -87,16 +91,20 @@ nav {
 
 }
 
+a {
+    text-decoration: none;
+}
+
 main {
     /*border: .1rem solid purple;*/
     flex: 1;
-    padding:  .7rem;
+    padding: .7rem;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
 }
 
-.cartao{
+.cartao {
     border: .12rem solid #222222;
     width: 10rem;
     height: 15rem;
@@ -104,42 +112,45 @@ main {
     padding: .5rem;
     display: flex 1;
     margin: .5rem;
-    
+
 }
 
-.imagem{
+.imagem {
     width: 100%;
 }
 
-.title{
+.title {
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: .2rem;
 }
 
-.descrição{
+.descrição {
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: .2rem;
 }
-.preco{
+
+.preco {
     font-size: 1.5rem;
     font-weight: bold;
     color: green;
     text-align: right;
 }
-.botao{
+
+.botao {
     /*border: none;
     border-radius: .5rem;*/
     background-color: blue;
     color: #eee;
-    width:100%;
-    padding:.3rem .5rem;
+    width: 100%;
+    padding: .3rem .5rem;
     margin-top: 1rem;
     border-radius: 10%;
 
-    
+
 }
+
 footer {
     /*border: .1rem solid rgb(22, 197, 145);*/
     background-color: rgb(37, 37, 37);
@@ -150,14 +161,17 @@ footer {
     align-content: center;
     font-weight: bold;
 }
-@media (max-width: 576px){
-    .titulo-cabeçalho{
+
+@media (max-width: 576px) {
+    .titulo-cabeçalho {
         opacity: 0;
     }
-    nav{
+
+    nav {
         display: none;
     }
-    main{
+
+    main {
         display: flex;
     }
 
